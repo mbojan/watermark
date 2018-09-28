@@ -2,7 +2,7 @@ SHELL=/bin/bash
 
 tex_files=$(wildcard *.tex)
 pdf_files=$(tex_files:.tex=.pdf)
-thumbfiles=$(addprefix img/,$(files:.tex=.png))
+thumbfiles=$(addprefix img/,$(tex_files:.tex=.png))
 
 default:
 
@@ -18,6 +18,7 @@ endef
 	latexmk -pdf $<
 
 img/%.png: %.pdf
+	mkdir img
 	convert $< -density 50 $@
 
 README.md: README-in.md $(thumbfiles)
