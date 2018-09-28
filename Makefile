@@ -1,6 +1,6 @@
+files=$(wildcard *.tex)
 
-default: watermark.pdf
-
+default: $(files:.tex=.pdf)
 
 %.pdf: %.tex
 	latexmk -pdf $<
