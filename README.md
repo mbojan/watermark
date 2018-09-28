@@ -1,15 +1,18 @@
 # PDF pages with watermarks
 
-Pdf watermarks I often.
+PDFs with watermarks that can be added to any PDF with `pdftk`.
 
-Add to any PDF with `pdftk`:
+
+## Usage
+
+To add some `watermark.pdf` to `original.pdf` use:
 
 ```bash
 pdftk original.pdf background watermark.pdf output result.pdf
 ```
 
 
-## A gallery
+## Gallery
 
 
 [ ![](img/draft.png) ](draft.pdf)
