@@ -12,6 +12,6 @@ pdftk original.pdf background watermark.pdf output result.pdf
 ## A gallery
 
 
-{{#FILES}}
-    [ ![](img/{{.}}.png) ]({{.}}.pdf)
-{{/FILES}}
+{{#ARRAY}}
+[ ![](img/{{.}}.png) ]({{.}}.pdf)
+{{/ARRAY}}
