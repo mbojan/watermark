@@ -18,12 +18,14 @@ endef
 	latexmk -pdf $<
 
 img/%.png: %.pdf
-	mkdir img
-	convert $< -density 50 $@
+	mkdir -p img
+	convert -density 20 -quality 85 -bordercolor Black -compose Copy -border 1 $< $@
 
 README.md: README-in.md $(thumbfiles)
 	$(runmo)
 
+README.html: README.md
+	pandoc $< -o $@ -f gfm
 
 
 pdf: $(pdf_files)

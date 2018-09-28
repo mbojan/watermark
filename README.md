@@ -13,3 +13,4 @@ pdftk original.pdf background watermark.pdf output result.pdf
 
 
 [ ![](img/draft.png) ](draft.pdf)
+[ ![](img/draft2.png) ](draft2.pdf)
