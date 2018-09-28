@@ -1,20 +1,23 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,12pt]{article}
 \usepackage[T1]{fontenc}
 \usepackage{rotating}
 \usepackage{xcolor}
 \usepackage{mathpazo}
 \pagestyle{empty}
-\newenvironment{textgray}{\color{lightgray}}{\ignorespaceafterend}
 \begin{document}
+\color{lightgray}
 
 \vspace*{\fill}
 
 \begin{center}
-\rotatebox{40}{%
-	\begin{textgray}
-		{\fontsize{100}{120}\selectfont DRAFT}
-	\end{textgray}
-}
+	\begin{turn}{40}
+		\begin{minipage}{12cm}
+			\centering
+			{\fontsize{100}{120}\selectfont DRAFT} \\
+
+			Please do not cite without permission from the authors
+		\end{minipage}
+	\end{turn}
 \end{center}
 
 \vspace*{\fill}
